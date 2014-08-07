@@ -1,7 +1,7 @@
 ZCMS
 ====
 
-ZCMS is a simple static site generated implemented as a [Zed](http://zedapp.org) package. It is used to generate the [Zed](http://zedapp.org) website (source can be found [here](http://github.com/zedapp/website)).
+ZCMS is a simple static site generator implemented as a [Zed](http://zedapp.org) package. It is used to generate the [Zed](http://zedapp.org) website (source can be found [here](http://github.com/zedapp/website)).
 
 Project structure
 -------
