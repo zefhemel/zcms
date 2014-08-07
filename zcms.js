@@ -42,17 +42,6 @@ Handlebars.registerHelper('eq', function(val, options) {
 });
 
 
-Handlebars.registerHelper('list-pages', function(regex) {
-    var pages = [];
-    var r = regex ? new RegExp(regex) : /.*/;
-    _.each(allPages, function(page) {
-        if(r.exec(page.url)) {
-            pages.push(page);
-        }
-    });
-    return pages;
-});
-
 Handlebars.registerHelper('sort', function(list, options) {
     var by = options.hash.by;
     var reverse = !!options.hash.reverse;

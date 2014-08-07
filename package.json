@@ -3,5 +3,9 @@
     "uri": "gh:zefhemel/zcms",
     "version": "1.0",
     "description": "A prototype content management system implemented as Zed package",
-    "files": []
+    "files": [
+        "handlebars.js",
+        "pagedown.js",
+        "zcms.js"
+    ]
 }
