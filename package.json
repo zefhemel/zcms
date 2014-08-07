@@ -1,0 +1,7 @@
+{
+    "name": "Zed Content Management System",
+    "uri": "gh:zefhemel/zcms",
+    "version": "1.0",
+    "description": "A prototype content management system implemented as Zed package",
+    "files": []
+}

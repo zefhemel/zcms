@@ -1,0 +1,48 @@
+{
+    modes: {
+        zcms: {
+            name: "ZCMS Mode",
+            highlighter: "ace/mode/markdown",
+            extensions: ["md"],
+
+            commands: {
+                "Tools:Preview": {
+                    scriptUrl: "/default/mode/markdown/preview.js",
+                    inputs: {
+                        text: true
+                    }
+                },
+                "Tools:Compile": {
+                    scriptUrl: "./zcms.js",
+                    action: "generate",
+                    inputs: {
+                        text: true
+                    }
+                }
+            },
+
+            handlers: {
+                preview: ["Tools:Preview"],
+                change: ["Tools:Compile"]
+            },
+
+            preferences: {
+                trimWhitespaceOnSave: false,
+                wordWrap: true,
+                wordWrapColumn: 80
+            }
+        },
+        markdown: {
+            extensions: ["!md"]
+        }
+    },
+    commands: {
+        "ZCMS:Generate Full Site": {
+            scriptUrl: "./zcms.js",
+            action: "generate-full"
+        }
+    },
+    keys: {
+        "ZCMS:Generate Full Site": "Ctrl-Shift-C"
+    }
+}
