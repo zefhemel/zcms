@@ -40,6 +40,19 @@
         "ZCMS:Generate Full Site": {
             scriptUrl: "./zcms.js",
             action: "generate-full"
+        },
+        "ZCMS:Start Webserver": {
+            scriptUrl: "./static_server.js",
+            action: "start"
+        },
+        "ZCMS:Web Request": {
+            scriptUrl: "./static_server.js",
+            action: "request",
+            internal: true
+        },
+        "ZCMS:Stop": {
+            scriptUrl: "./static_server.js",
+            action: "stop"
         }
     },
     keys: {

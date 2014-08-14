@@ -1,11 +1,14 @@
 {
     "name": "Zed Content Management System",
     "uri": "gh:zefhemel/zcms",
-    "version": "1.0",
+    "version": "1.1",
     "description": "A prototype content management system implemented as Zed package",
     "files": [
         "handlebars.js",
+        "mime_types.js",
         "pagedown.js",
+        "README.md",
+        "static_server.js",
         "zcms.js"
     ]
 }
